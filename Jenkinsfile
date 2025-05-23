@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Cloner') {
       steps {
-        git 'https://github.com/ngone/frontend-angular-app.git'
+        git 'https://github.com/Soxnang/frontend-angular-app.git'
       }
     }
     stage('Install') {
