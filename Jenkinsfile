@@ -4,12 +4,12 @@ pipeline {
     SONAR_TOKEN = credentials('sonar-token')
   }
 
-  stages {
-    stage('Cloner') {
-      steps {
-        git 'https://github.com/Soxnang/frontend-angular-app.git'
-      }
-    }
+stage('Cloner') {
+  steps {
+    git branch: 'main', url: 'https://github.com/Soxnang/frontend-angular-app.git'
+  }
+}
+
     stage('Install') {
       steps {
         sh 'npm install'
